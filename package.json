@@ -1,0 +1,18 @@
+{
+  "name": "xmonitor",
+  "version": "1.0.0",
+  "description": "Monitor of workspace for your scripts with editor during runtime script",
+  "main": "slave_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pirat_newTime",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mime": "^2.4.0",
+    "mime-types": "^2.1.22",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  }
+}
