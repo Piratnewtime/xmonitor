@@ -8,6 +8,10 @@
   },
   "author": "Pirat_newTime",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Piratnewtime/xmonitor.git"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "mime": "^2.4.0",
