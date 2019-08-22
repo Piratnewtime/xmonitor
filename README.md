@@ -1,6 +1,6 @@
 [![XMonitor Logo](https://elgod.pw/xmonitor/xmonitor_logo.png)](https://npmjs.org/package/xmonitor)
 
-  Monitor of workspace for your scripts with editor during runtime script for [node](http://nodejs.org).
+  Monitor of workspace for your scripts with editor during runtime script for [node.js](http://nodejs.org).
 
   [![NPM Version][npm-image]][npm-url]
 
