@@ -113,7 +113,7 @@ local_io.sockets.on('connection', function (socket) {
 	});
 });
 
-module.exports = (socket_path = './socket', outport = 5588, webport = 8080)=>{
+module.exports = (webport = 8080)=>{
 	
 	// Opening new socket for web connections
 	const io = require('socket.io').listen(webport);
