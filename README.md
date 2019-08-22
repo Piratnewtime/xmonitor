@@ -9,6 +9,10 @@
 ```bash
 $ npm install xmonitor
 ```
+or
+```bash
+$ npm install https://github.com/Piratnewtime/xmonitor/tarball/master
+```
 
 ## Step two
 You need create only one server for take access to your scripts.
