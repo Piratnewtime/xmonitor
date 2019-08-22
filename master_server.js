@@ -244,7 +244,7 @@ module.exports = (socket_path = './socket', outport = 5588, webport = 8080)=>{
 	
 	// Initialization little http web server
 	const init_web = (host = '0.0.0.0', port = 4567)=>{
-		const root = './static/';
+		const root = 'node_modules/xmonitor/static/';
 		
 		http.createServer(function(req, res) {
 			
@@ -281,7 +281,7 @@ module.exports = (socket_path = './socket', outport = 5588, webport = 8080)=>{
 			
 			res.writeHead(code, file_mime);
 			var file = fs.readFileSync(file_path);
-			if(file_path=='./static/index.html' || file_path=='./static/app.jsx') file = file.toString().replace(/\{socket_port\}/g, webport);
+			if(file_path==root+'index.html' || file_path==root+'app.jsx') file = file.toString().replace(/\{socket_port\}/g, webport);
 			res.end(file);
 			
 		}).listen(port, host);
