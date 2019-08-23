@@ -249,6 +249,7 @@ module.exports = (webport = 8080)=>{
 		http.createServer(function(req, res) {
 			
 			var code = 200;
+			var header_host = req.headers.host.split(':')[0];
 			var url = req.url.trimChar('/');
 			var file_path = root+url.replace(/\s/g, '').replace(/..\//g, '').replace(/\/\//g, '');
 			
@@ -281,7 +282,7 @@ module.exports = (webport = 8080)=>{
 			
 			res.writeHead(code, file_mime);
 			var file = fs.readFileSync(file_path);
-			if(file_path==root+'index.html' || file_path==root+'app.jsx') file = file.toString().replace(/\{socket_port\}/g, webport);
+			if(file_path==root+'index.html' || file_path==root+'app.jsx') file = file.toString().replace(/\{socket_port\}/g, webport).replace(/\{host\}/g, header_host);
 			res.end(file);
 			
 		}).listen(port, host);
