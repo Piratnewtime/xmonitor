@@ -1,6 +1,8 @@
 [![XMonitor Logo](https://elgod.pw/xmonitor/xmonitor_logo.png)](https://npmjs.org/package/xmonitor)
 
   Monitor of workspace for your scripts with editor during runtime script for [node.js](http://nodejs.org).
+  
+  Auditor of your node.js scripts can read variables, reviewing objects, edit values and run functions. All functions present in easy web panel are available from any browsers and devices, all you need - is connect module on your server and open url address anywhere.
 
   [![NPM Version][npm-image]][npm-url]
 
